@@ -322,6 +322,13 @@ p {
     opacity: 0.5;
 }
 
+.row__bg__zigzag-3 {
+    height: 100px;
+    left: 100%;
+    top: -50px;
+    opacity: 0.5;
+}
+
 .row__bg__dots-1 {
     width: 150px;
     left: -80px; 
@@ -337,6 +344,12 @@ p {
 .row__bg__dots-3 {
     width: 300px;
     right: 10%; 
+    top: 0;
+}
+
+.row__bg__dots-4 {
+    width: 300px;
+    right: -10%; 
     top: 0;
 }
 
@@ -382,6 +395,15 @@ p {
     opacity: 0.5;
     animation-delay: 2s;
 }
+
+.row__bg__button-3 {
+    height: 120px;
+    top: 500px;
+    left: 150px;
+    opacity: 0.2;
+    animation-delay: 2s;
+}
+
 .row__bg__ring-3,
 .row__bg__ring-4,
 .row__bg__ring-5,
@@ -426,7 +448,34 @@ p {
     left: 30%;
     top: -75px;
     animation-delay: 6s;
+}
 
+
+.row__bg__ring-9 {
+    left: -80px;
+    top: 375px;
+    animation-delay: 6s;
+
+}
+
+.main-video-container {
+    overflow: hidden;
+    position: relative;
+    width:100%;
+}
+
+.main-video-container::after {
+    padding-top: 56.25%;
+    display: block;
+    content: '';
+}
+
+.main-video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 .rotate-slow {
