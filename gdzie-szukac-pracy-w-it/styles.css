@@ -21,7 +21,7 @@ body {
 }
 
 
-header, main  {
+header, main, .bar  {
     max-width: 1080px;
     width: 100%;
 }
@@ -117,7 +117,7 @@ h3 span.collapse {
 }
 
 main {
-    padding: 0 25px;
+    padding: 0 25px 200px;
     margin: 50px auto 25px;
     position: relative;
     z-index: 10;
@@ -127,14 +127,14 @@ section {
     width: 100%;
 }
 
-a {
+a:not(.bar) {
     display: inline-block;
     color: #38CCAE;
     text-decoration: none;
     position: relative;
 }
 
-a:after {
+a:not(.bar):after {
     content: "";
     background: linear-gradient(90deg, #1b1b1b, #38CCAE);
     left: 0;
@@ -166,6 +166,7 @@ p {
 }
 
 .bg {
+    display: none;
     position: fixed;
     left: 0;
     right: 0;
@@ -223,6 +224,17 @@ p {
     position: relative;
 }
 
+.bar {
+    padding: 24px;
+    display: inline-block;
+    cursor: pointer;
+    background-color: #1b1b1b;
+    border-bottom: none;
+    color: #fff;
+    text-decoration: none;
+    background-color: rgba(56,204, 174, 0.8);
+}
+
 .rotate-slow {
     animation: kf-rotate 100s infinite;
 }
@@ -250,27 +262,54 @@ p {
 /* RWD */
 
 @media (min-width: 813px) {
-    .header__bg {
+    .bg {
         display: block;
     }
 
-
-    .about-us__logo {
-        display: block;
+    .bar-container {
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+        z-index: 100;
+        text-align: center;
     }
 
-    .header__guys {
-        display: block;
+    .bar {
+        padding: 18px 0 6px;
+        display: inline-block;
+        cursor: pointer;
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+        transition: padding 0.3s, border-color 0.3s, background-color 0.3s;
+        background-color: #1b1b1b;
+        border: solid 3px;
+        border-bottom: none;
+        color: #fff;
+        text-decoration: none;
     }
 
-    .row__bg {
-        display: block;
+    .bar:hover {
+        padding: 18px 0 48px;
+        background-color: rgba(56,204, 174, 0.8);
+        border-color: rgba(56,204, 174, 0.8);
+        
+    }
+
+    .bar p {
+        font-size: 22px;
     }
 }
 
 @media (max-width: 812px) {
+    
     header {
         margin: 25px 0 50px;
+        padding: 0 25px;    
+        display: block;
+    }
+
+    header .header__homepage-link {
+        display: none;
     }
     
 
@@ -279,19 +318,9 @@ p {
         padding: 0 25px;
     }
 
-    .header__logotype {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .header__logo {
-        margin-bottom: 50px;
-        order: 2;
-    }
     
     h1 {
         font-size: 42px;
-        order: 1;
         padding-left: 0;
     }
 
@@ -308,7 +337,7 @@ p {
         width: 100%;
         flex-wrap: wrap;
         margin-top: 25px;
-        justify-content: center;
+        justify-content: flex-start;
     }
 
     .row p {
@@ -320,5 +349,13 @@ p {
 
     .row__col {
         width: 100%;
+    }
+
+    ul {
+        list-style-type: none;
+    }
+
+    .bar-container {
+
     }
 }
