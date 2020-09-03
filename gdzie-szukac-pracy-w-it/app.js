@@ -48,7 +48,9 @@
         },{
             name: "Zlecenia dla studentów - programiści, graficy, copywriterzy, i inni",
             link: "https://www.facebook.com/groups/zleceniadlastudentow/"
-        
+        }, {
+            name: "Back-end. Pierwsza praca",
+            link: "https://www.facebook.com/groups/1852128488353939/"
         }]},
         {
             name: "Ogólne",
@@ -60,7 +62,7 @@
                 link: "https://www.facebook.com/groups/227368341464993/"
             },{
                 name: "Praca IT / Jobs IT",
-                link: "https://www.facebook.com/groups/pracait//"
+                link: "https://www.facebook.com/groups/pracait/"
             },{
                 name: "PRACA IT - POLSKA I ŚWIAT",
                 link: "https://www.facebook.com/groups/1645832589008328/"
@@ -73,27 +75,38 @@
             },{
                 name: "Remote Jobs IT - zdalny programista - zlecenia i oferty pracy",
                 link: "https://www.facebook.com/groups/246806639124789/"
+            },{
+                name: "Praca w iT - Oferty Pracy: Praktyki i Staż - Junior, Senior, Full Developer",
+                link: "https://www.facebook.com/groups/790784451359457/",
+            },{
+                name: "Praca w IT",
+                link: "https://www.facebook.com/groups/pracawbranzyit/"
             }]
         },
         {
-            name: "Praca zdalna",
+            name: "Specjalizacje",
             list: [{
-                name: "Praca dla programistów i programistek powyżej 20000zł, 30000zł i 40000zł",
-                link: "https://www.facebook.com/groups/280382479112568/"
+                name: "Python Poland: Jobs",
+                link: "https://www.facebook.com/groups/pythonjobs/"
             },{
-                name: "Oferty Pracy IT z Widełkami",
-                link: "https://www.facebook.com/groups/227368341464993/"
+                name: "JS News: Jobs",
+                link: "https://www.facebook.com/groups/jsjobs/"
             },{
-                name: "Praca IT / Jobs IT",
-                link: "https://www.facebook.com/groups/pracait//"
+                name: "GameDev Polska: Praca",
+                link: "https://www.facebook.com/groups/gamedevpolskapraca/"
             },{
-                name: "PRACA IT - POLSKA I ŚWIAT",
-                link: "https://www.facebook.com/groups/1645832589008328/"
+                name: "QA Testers - job offers, oferty pracy, jobangebote",
+                link: "https://www.facebook.com/groups/808752555920542/"
             },{
-                name: "Praca dla programistów-Polska",
-                link: "https://www.facebook.com/groups/880143435429902/"
-            }]
-        }
+                name: "Praca Backend (Java, Python, C++, .NET, PHP, Ruby on Rails, Scala)",
+                link: "https://www.facebook.com/groups/469285070091224/"
+            },{
+                name: "Praca DevOps",
+                link: "https://www.facebook.com/groups/366168403801056/"
+            },
+            {   name: "Praca Aplikacje Mobilne - Android, iOS",
+                link: "https://www.facebook.com/groups/600434323449128/"}
+        ]}
     ]
 
     const createLinkElement = (entity) => {
