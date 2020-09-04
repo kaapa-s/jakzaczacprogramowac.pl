@@ -137,6 +137,7 @@
     });
 
     groups.forEach(group => {
+        group.list = group.list.sort((a,b) => a.name.localeCompare(b.name));
         const h3 = document.createElement("h3");
         h3.innerText = group.name;
 
