@@ -79,7 +79,7 @@ h2:after {
     height: 5px;
     left: 0;
     bottom: -20px;
-    background: linear-gradient(90deg, #38CCAE 0%, #1b1b1b 60%);
+    background: linear-gradient(90deg, #38CCAE 0%, transparent 60%);
 }
 
 h3 {
@@ -104,7 +104,7 @@ a {
 
 a:after {
     content: "";
-    background: linear-gradient(90deg, #1b1b1b, #38CCAE);
+    background: linear-gradient(90deg, transparent, #38CCAE);
     left: 0;
     bottom: 0;
     width: 0;

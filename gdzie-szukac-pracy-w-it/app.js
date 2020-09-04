@@ -20,6 +20,15 @@
     },{
         name: "Startup Jobs",
         link: "https://startup.jobs/"
+    }, {
+        name: "SOLID.Jobs",
+        link: "https://solid.jobs/offers/it"
+    }, {
+        name: "4programmers",
+        link: "https://4programmers.net/Praca",
+    }, {
+        name: "TeamQuest",
+        link: "https://teamquest.pl/praca-w-it"
     }];
 
     const groups = [{
@@ -161,6 +170,13 @@
         document.querySelector(".groups").appendChild(ulRow);
     })
 
+    const onScroll = () => {
+        window.removeEventListener("scroll", onScroll);
+        setTimeout(() => {
+            document.querySelector(".bar-container").classList.add("shown");
+        }, 2000);
+    }
 
+    window.addEventListener("scroll", onScroll)
     
 })()

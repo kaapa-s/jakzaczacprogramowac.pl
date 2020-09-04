@@ -65,7 +65,7 @@ h2:after {
     height: 5px;
     left: 0;
     bottom: -20px;
-    background: linear-gradient(90deg, #38CCAE 0%, #1b1b1b 60%);
+    background: linear-gradient(90deg, #38CCAE 0%, transparent 60%);
 }
 
 h3 {
@@ -136,7 +136,7 @@ a:not(.bar) {
 
 a:not(.bar):after {
     content: "";
-    background: linear-gradient(90deg, #1b1b1b, #38CCAE);
+    background: linear-gradient(90deg, transparent, #38CCAE);
     left: 0;
     bottom: -5px;
     width: 0;
@@ -182,10 +182,9 @@ p {
 
 .row__bg__dots-1 {
     width: 15vw;
-    left: 75%; 
+    left: 60%; 
     top: 40%;
 }
-
 
 .row__bg__button-1 {
     width: 5vw;
@@ -201,7 +200,7 @@ p {
 
 .row__bg__waves-1 {
     height: 15vh;
-    left: -5%;
+    left: -15%;
     bottom: 10%;
 }
 
@@ -269,9 +268,14 @@ p {
     .bar-container {
         position: fixed;
         width: 100%;
-        bottom: 0;
         z-index: 100;
         text-align: center;
+        bottom: -300px;
+        transition: bottom 0.3s;
+    }
+
+    .bar-container.shown {
+        bottom: 0;
     }
 
     .bar {
