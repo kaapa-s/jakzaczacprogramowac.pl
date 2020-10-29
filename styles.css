@@ -361,8 +361,8 @@ p {
 
 .row__bg__dots-5 {
     width: 425px;
-    left: 35%; 
-    top: 600px;
+    left: 65%; 
+    top: 1200px;
 }
 
 .row__bg__button-1 {
@@ -484,6 +484,7 @@ p {
     overflow: hidden;
     position: relative;
     width:100%;
+    margin-bottom: 50px;
 }
 
 .main-video-container::after {
@@ -501,8 +502,24 @@ p {
 }
 
 .main-video-description {
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
+
+.episode {
+    display: block;
+    font-size: 24px;
+    margin: 16px 0;
+}
+
+.episode a {
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.episode a:hover {
+    color: #38CCAE;
+}
+
 
 .rotate-slow {
     animation: kf-rotate 100s infinite;
