@@ -195,10 +195,6 @@
           link: 'https://stackoverflow.com/jobs/paid-relocation-developer-jobs',
         },
         {
-          name: 'Praca w IT - Junior/Staż',
-          link: 'https://www.facebook.com/groups/802556203473410/',
-        },
-        {
           name: 'Working Nomads',
           link: 'https://www.workingnomads.co/jobs',
         },
@@ -322,5 +318,5 @@
     }, 2000);
   };
 
-  window.addEventListener('scroll', onScroll);
+  // window.addEventListener('scroll', onScroll);
 })();
