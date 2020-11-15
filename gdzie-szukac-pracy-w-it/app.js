@@ -92,7 +92,7 @@
       ],
     },
     {
-      name: 'Ogólne',
+      name: 'Portale',
       list: [
         {
           name:
@@ -135,7 +135,7 @@
       ],
     },
     {
-      name: 'Specjalizacje',
+      name: 'Grupy na FB',
       list: [
         {
           name: 'Python Poland: Jobs',
@@ -170,6 +170,91 @@
     },
   ];
 
+  const abroad = [
+    {
+      name: 'Portale',
+      list: [
+        {
+          name: 'Relocate',
+          link: 'https://relocate.me/search//',
+        },
+        {
+          name: 'We Work Remotely',
+          link: 'https://weworkremotely.com/',
+        },
+        {
+          name: 'Remote in Tech (lista firm)',
+          link: 'https://remoteintech.company',
+        },
+        {
+          name: 'Stack Overflow (praca zdalna)',
+          link: 'https://stackoverflow.com/jobs/remote-developer-jobs',
+        },
+        {
+          name: 'Stack Overflow (relokacja)',
+          link: 'https://stackoverflow.com/jobs/paid-relocation-developer-jobs',
+        },
+        {
+          name: 'Praca w IT - Junior/Staż',
+          link: 'https://www.facebook.com/groups/802556203473410/',
+        },
+        {
+          name: 'Working Nomads',
+          link: 'https://www.workingnomads.co/jobs',
+        },
+        {
+          name: 'Turing',
+          link: 'https://developers.turing.com',
+        },
+        {
+          name: 'Remote OK',
+          link: 'https://remoteok.io/remote-jobs/',
+        },
+        {
+          name: 'Breakout Careers',
+          link: 'https://breakout.careers/jobs',
+        },
+        {
+          name: 'Remote.co',
+          link: 'https://remote.co/',
+        },
+        {
+          name: 'Indeed.com',
+          link: 'https://www.indeed.com/',
+        },
+        {
+          name: 'Codepen',
+          link: 'https://codepen.io/jobs',
+        },
+        {
+          name: 'Smashing',
+          link: 'https://remoteok.io/remote-jobs/',
+        },
+        {
+          name: 'Work From Home Jobs',
+          link: 'https://workfromhomejobs.me/remote-developer-jobs/',
+        },
+      ],
+    },
+    {
+      name: 'Grupy na FB',
+      list: [
+        {
+          name: 'Jobs for Front-End Developers',
+          link: 'https://www.facebook.com/groups/556739801135588',
+        },
+        {
+          name: 'International Development Jobs (IDJ)',
+          link: 'https://www.facebook.com/groups/366722777931700/',
+        },
+        {
+          name: 'International Development Jobs and Careers',
+          link: 'https://www.facebook.com/groups/733493403751706/',
+        }
+      ],
+    },
+  ];
+
   const createLinkElement = (entity) => {
     const li = document.createElement('li');
     const a = document.createElement('a');
@@ -190,40 +275,45 @@
       .appendChild(createLinkElement(portal));
   });
 
-  groups.forEach((group) => {
-    group.list = group.list.sort((a, b) => a.name.localeCompare(b.name));
-    const h3 = document.createElement('h3');
-    h3.innerText = group.name;
-
-    const spanExpand = document.createElement('span');
-    spanExpand.classList.add('expand');
-    spanExpand.innerText = ' (rozwiń)';
-    const spanCollapse = document.createElement('span');
-    spanCollapse.classList.add('collapse');
-    spanCollapse.innerText = ' (zwiń)';
-    h3.appendChild(spanExpand);
-    h3.appendChild(spanCollapse);
-
-    const ulRow = document.createElement('div');
-    ulRow.classList.add('row');
-    const ul = document.createElement('ul');
-    ul.classList.add('list');
-    ulRow.appendChild(ul);
-
-    h3.addEventListener('click', () => {
-      if (h3.classList.contains('expanded')) {
-        h3.classList.remove('expanded');
-      } else {
-        h3.classList.add('expanded');
-      }
+  const generateNestedLists = (items, selector) => {
+    items.forEach((item) => {
+      item.list = item.list.sort((a, b) => a.name.localeCompare(b.name));
+      const h3 = document.createElement('h3');
+      h3.innerText = item.name;
+  
+      const spanExpand = document.createElement('span');
+      spanExpand.classList.add('expand');
+      spanExpand.innerText = ' (rozwiń)';
+      const spanCollapse = document.createElement('span');
+      spanCollapse.classList.add('collapse');
+      spanCollapse.innerText = ' (zwiń)';
+      h3.appendChild(spanExpand);
+      h3.appendChild(spanCollapse);
+  
+      const ulRow = document.createElement('div');
+      ulRow.classList.add('row');
+      const ul = document.createElement('ul');
+      ul.classList.add('list');
+      ulRow.appendChild(ul);
+  
+      h3.addEventListener('click', () => {
+        if (h3.classList.contains('expanded')) {
+          h3.classList.remove('expanded');
+        } else {
+          h3.classList.add('expanded');
+        }
+      });
+  
+      item.list.forEach((listItem) =>
+        ul.appendChild(createLinkElement(listItem))
+      );
+      document.querySelector(selector).appendChild(h3);
+      document.querySelector(selector).appendChild(ulRow);
     });
+  };
 
-    group.list.forEach((listItem) =>
-      ul.appendChild(createLinkElement(listItem))
-    );
-    document.querySelector('.groups').appendChild(h3);
-    document.querySelector('.groups').appendChild(ulRow);
-  });
+  generateNestedLists(groups, ".groups");
+  generateNestedLists(abroad, ".abroad");
 
   const onScroll = () => {
     window.removeEventListener('scroll', onScroll);

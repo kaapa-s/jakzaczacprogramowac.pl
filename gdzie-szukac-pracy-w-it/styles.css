@@ -99,20 +99,20 @@ h3 span.collapse {
     display: none;
 }
 
-.groups ul {
+.nested ul {
     display: none;
 }
 
-.groups h3.expanded + .row ul {
+.nested h3.expanded + .row ul {
     display: block;
 }
 
-.groups h3.expanded span.collapse  {
+.nested h3.expanded span.collapse  {
     display: inline;
 }
 
 
-.groups h3.expanded span.expand {
+.nested h3.expanded span.expand {
     display: none;
 }
 
