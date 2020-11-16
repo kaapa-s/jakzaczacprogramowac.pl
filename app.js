@@ -1,6 +1,18 @@
 (() => {
     var episodes = [
         {
+            title: "#17 - Skąd brać wiedzę i motywację do nauki? Front-end",
+            link: "https://youtu.be/Iqs6N1UZijs"
+        },
+        {
+            title: "#16 - Jak zmniejszyć stres na rozmowie kwalifikacyjnej?",
+            link: "https://youtu.be/uF5IvikYI78"
+        },
+        {
+            title: "#15 - Za stary na programowanie?",
+            link: "https://youtu.be/aPPkufI70HM"
+        },
+        {
             title: "#14 - Skąd języki programowania wzięły swoje nazwy?",
             link: "https://www.youtube.com/watch?v=omoIm8PpPzE"
         },{
