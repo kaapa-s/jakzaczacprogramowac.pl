@@ -1,6 +1,10 @@
 (() => {
     var episodes = [
         {
+            title: "#18 - Czy rekruter IT patrzy na wiek kandydata?",
+            link: "https://youtu.be/DNQhrLiA5o4"
+        },
+        {
             title: "#17 - Skąd brać wiedzę i motywację do nauki? Front-end",
             link: "https://youtu.be/Iqs6N1UZijs"
         },
