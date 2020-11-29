@@ -1,6 +1,10 @@
 (() => {
     var episodes = [
         {
+            title: "#19 - Zagraniczne oferty pracy dla programistów i programistek",
+            link: "https://youtu.be/vj2_cmIVRTo"
+        },
+        {
             title: "#18 - Czy rekruter IT patrzy na wiek kandydata?",
             link: "https://youtu.be/DNQhrLiA5o4"
         },
