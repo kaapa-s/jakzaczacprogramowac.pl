@@ -44,6 +44,17 @@
       name: 'TeamQuest',
       link: 'https://teamquest.pl/praca-w-it',
     },
+    {
+      name: 'Skillshot (gamedev)',
+      link: 'https://www.skillshot.pl/'
+    },
+    {
+      name: 'Binar jobs',
+      link: 'https://binarjobs.com/pl',
+    }, {
+      name: 'Challenge Rocket',
+      link: 'https://challengerocket.com/jobs'
+    }
   ];
 
   const groups = [
@@ -92,7 +103,7 @@
       ],
     },
     {
-      name: 'Portale',
+      name: 'Ogólne',
       list: [
         {
           name:
@@ -135,7 +146,7 @@
       ],
     },
     {
-      name: 'Grupy na FB',
+      name: 'Specjalizacje',
       list: [
         {
           name: 'Python Poland: Jobs',
@@ -165,7 +176,7 @@
         {
           name: 'Praca Aplikacje Mobilne - Android, iOS',
           link: 'https://www.facebook.com/groups/600434323449128/',
-        },
+        }
       ],
     },
   ];
@@ -230,6 +241,14 @@
           name: 'Work From Home Jobs',
           link: 'https://workfromhomejobs.me/remote-developer-jobs/',
         },
+        {
+          name: 'Glassdoor',
+          link: 'https://www.glassdoor.com/'
+        },
+        {
+          name: 'Inhire.io',
+          link: 'https://www.inhire.io/'
+        }
       ],
     },
     {
