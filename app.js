@@ -1,11 +1,67 @@
 (() => {
   var episodes = [
     {
+      title: '#36 - Testy na front-endzie: Podstawy',
+      link: 'https://youtu.be/w_pkPTCzduY',
+      embedLink: 'https://www.youtube.com/embed/w_pkPTCzduY',
+      description:
+        'Chciałbym Wam opowiedzieć o tym po co testować kod aplikacji front-endowych. Pokażę Wam, jakie są rodzaje testów i kiedy powinniśmy je stosować. Ten odcinek jest wstępem teoretycznym. Kolejne odcinki z serii o testowaniu będą tutorialami, w których pokażemy Wam jak pisać testy.',
+    },
+    {
+      title: '#35 - Frontend - na co uważać podczas nauki?',
+      link: 'https://youtu.be/16EfoKAAiFY',
+    },
+    {
+      title: '#34 - Jak zrobić pisankę w CSS?',
+      link: 'https://youtu.be/2oWrqdLZpsg',
+    },
+    {
+      title: '#33 - Pomagamy początkującym z ich projektami! #2',
+      link: 'https://youtu.be/YM02FB2KOgQ',
+    },
+    {
+      title: '#32 - Backend w Node.js - PATCH, DELETE. Darmowy hosting na Heroku i Github pages',
+      link: 'https://youtu.be/TCjpRrIpZQ4',
+    },
+    {
+      title: '#31 - Backend - Podstawy w Node.js i Express',
+      link: 'https://youtu.be/Oc9hbOL0_nk',
+    },
+    {
+      title: '#30 - Zrobiłem mini Among Us w CSS i Vanilla Javascript!',
+      link: 'https://youtu.be/_IXPA7s37TE',
+    },
+    {
+      title: '#29 - Pomagamy początkującym z ich projektami! #1',
+      link: 'https://youtu.be/jaZsdeFsD2Y',
+    },
+    {
+      title: '#28 - Jak zrobić stronę internetową w szklanym stylu?',
+      link: 'https://youtu.be/DuhCOiOTyRQ',
+    },
+    {
+      title: '#27 - Podstawy programowania: Code Review',
+      link: 'https://youtu.be/pBZGNvbz9QY',
+    },
+    {
+      title: '#26 - Mój pierwszy projekt!',
+      link: 'https://youtu.be/PXIXkjAm4U4',
+    },
+    {
+      title: '#25 - Jak radziłem sobie z demotywacją podczas nauki programowania?',
+      link: 'https://youtu.be/J4uIf17q6wE',
+    },
+    {
+      title: '#24 - Plan nauki programowania - newsletter!',
+      link: 'https://youtu.be/E_GzgvAH-nQ',
+    },
+    {
+      title: '#23 - Jak mądrze wybrać pierwszy język programowania?',
+      link: 'https://youtu.be/0EyfX7H3NNg',
+    },
+    {
       title: '#22 - Nietypowe książki dla programistek i programistów',
       link: 'https://www.youtube.com/watch?v=nXHYd5x3Bio',
-      embedLink: 'https://www.youtube.com/embed/nXHYd5x3Bio',
-      description:
-        'Kto powiedział, że programistom i programistkom przydadzą się tylko książki o kodzie?',
     },
     {
       title: '#21 - Jak zrobić śnieg na stronę w JavaScript, HTML i CSS? cz. 2',
