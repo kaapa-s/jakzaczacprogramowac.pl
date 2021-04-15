@@ -493,6 +493,72 @@ p {
     content: '';
 }
 
+form {
+    width: 100%;
+}
+
+label,
+input,
+textarea {
+    width: 100%;
+    display: block;
+    color: #fff;
+    font-size: 24px;
+}
+
+label {
+    padding-bottom: 15px;
+}
+
+input,
+textarea {
+    padding: 15px 20px;
+    margin-bottom: 30px;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+input[type="submit"] {
+    display: inline-block;
+    margin-top: 20px;
+    position: relative;
+    width: 250px;
+    padding: 15px 0;
+    color: #fff;
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    background-color: #38ccae;
+    background: linear-gradient(
+      to right top, #38ccae, rgba(255, 255, 255, 0.6) 
+    );
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    text-decoration: none;
+    text-align: center;
+}
+
+input[type="submit"]:focus {
+outline-color: #fff;
+}
+    
+input[type="submit"]::after {
+    content: "";
+    height: 150%;
+    width: 50px;
+    position: absolute;
+    left: -80px;
+    top: -25%;
+    transition: transform 0.4s;
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateX(0) rotate(20deg);
+}
+
+input[type="submit"]:hover:after {
+    transform: translateX(500px) rotate(20deg);
+}
+
 .main-video-container iframe {
     position: absolute;
     top: 0;
