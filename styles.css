@@ -543,7 +543,7 @@ input[type="submit"]:focus {
 outline-color: #fff;
 }
     
-input[type="submit"]::after {
+input[type="submit"]:after {
     content: "";
     height: 150%;
     width: 50px;
